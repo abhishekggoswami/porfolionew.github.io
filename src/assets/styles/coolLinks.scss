@@ -145,6 +145,7 @@
 .coolCircleEyeButton{
     position: relative;
     display: inline-block;
+   z-index: 35;
     .textcircle{
         display:block;
         width: 250px;

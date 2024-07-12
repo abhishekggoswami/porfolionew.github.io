@@ -6,20 +6,14 @@ import imagesLoaded from "imagesloaded";
 import Scrollbar, { ScrollbarPlugin } from "smooth-scrollbar";
 
 class DisableScrollPlugin extends ScrollbarPlugin {
-  constructor(scrollbar, options) {
-      super(scrollbar, options);
-      this.static.pluginName = 'disableScroll';
-      this.static.defaultOptions = {
-          direction: ''
-      };
-  }
-
-  transformDelta(delta) {
-      if (this.options.direction) {
-          delta[this.options.direction] = 0;
-      }
-      return Object.assign({}, delta);
-  }
+    static pluginName = 'disableScroll';
+    static defaultOptions = { direction: '' };
+    transformDelta(delta) {
+        if (this.options.direction) {
+            delta[this.options.direction] = 0;
+        }
+        return { ...delta };
+    }
 }
 Scrollbar.use(DisableScrollPlugin);
 

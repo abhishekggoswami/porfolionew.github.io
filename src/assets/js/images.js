@@ -2,7 +2,7 @@ import avatar1 from "../images/avatars/1.jpeg";
 import avatar2 from "../images/avatars/lekshmimam.jpg";
 import avatar3 from "../images/avatars/joshansir.png";
 import avatar4 from "../images/avatars/jishnu.png";
-import avatar5 from "../images/avatars/sreejesh.png";
+import avatar5 from "../images/avatars/Sreejesh.png";
 import avatar6 from "../images/avatars/kps.png";
 import avatar7 from "../images/avatars/7.png";
 import avatar8 from "../images/avatars/radhika.png";
